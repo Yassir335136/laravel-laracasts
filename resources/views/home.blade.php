@@ -3,5 +3,9 @@
         Home Page
     </x:slot:heading>
 
-    <h1>Welcome from home</h1>
+    @foreach($jobs as $job)
+        {{ $title }} . {{ $description }}
+    @endforeach
+
+    <h1>Welcome {{ $name }} on the home page</h1>
 </x-layout>
